@@ -6,11 +6,10 @@ pragma solidity ^0.5.0;
 contract helloWorld {
 
     /* define variables, all variables are stored on the blockchain */
-    string public greeting;
+    string greeting;
 
-    function getGreeting () public returns(string memory) {
-        greeting = 'Hello World';
-        return greeting;
+    function getGreeting() pure public returns(string memory) {
+        return 'Hello World';
     }
 
     function setGreeting(string memory _greeting) public {

@@ -4,21 +4,6 @@
     {
       "constant": true,
       "inputs": [],
-      "name": "greeting",
-      "outputs": [
-        {
-          "internalType": "string",
-          "name": "",
-          "type": "string"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [],
       "name": "getGreeting",
       "outputs": [
         {
@@ -28,7 +13,7 @@
         }
       ],
       "payable": false,
-      "stateMutability": "nonpayable",
+      "stateMutability": "pure",
       "type": "function"
     },
     {
@@ -62,21 +47,21 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"Greet\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"getGreeting\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"greeting\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"_greeting\",\"type\":\"string\"}],\"name\":\"setGreeting\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/yashmadhwal/Documents/Yash Madhwal/Ethereum/Hello_World_SC_Python/contracts/helloWorld.sol\":\"helloWorld\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/yashmadhwal/Documents/Yash Madhwal/Ethereum/Hello_World_SC_Python/contracts/helloWorld.sol\":{\"keccak256\":\"0x925fd832dc4176efce59bfe11c72bf0f16a6cbd4a5b418a69d2e183cab5b2902\",\"urls\":[\"bzz-raw://7ad56a689a6295fffb18b3971867d0765c537b0c7daa8ae19febbc28810f5b2b\",\"dweb:/ipfs/QmYxfMUgNR8jF1xf5WZxjP6cyMCKuwyaMp9e9XMJ6XZJfJ\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506105b7806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80635ae5d4aa14610051578063a4136862146100d4578063ef690cc01461018f578063fe50cc7214610212575b600080fd5b610059610295565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61018d600480360360208110156100ea57600080fd5b810190808035906020019064010000000081111561010757600080fd5b82018360208201111561011957600080fd5b8035906020019184600183028401116401000000008311171561013b57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610337565b005b610197610351565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101d75780820151818401526020810190506101bc565b50505050905090810190601f1680156102045780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61021a6103ef565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561025a57808201518184015260208101905061023f565b50505050905090810190601f1680156102875780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561032d5780601f106103025761010080835404028352916020019161032d565b820191906000526020600020905b81548152906001019060200180831161031057829003601f168201915b5050505050905090565b806000908051906020019061034d9291906104dd565b5050565b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103e75780601f106103bc576101008083540402835291602001916103e7565b820191906000526020600020905b8154815290600101906020018083116103ca57829003601f168201915b505050505081565b60606040518060400160405280600b81526020017f48656c6c6f20576f726c640000000000000000000000000000000000000000008152506000908051906020019061043c9291906104dd565b5060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104d35780601f106104a8576101008083540402835291602001916104d3565b820191906000526020600020905b8154815290600101906020018083116104b657829003601f168201915b5050505050905090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061051e57805160ff191683800117855561054c565b8280016001018555821561054c579182015b8281111561054b578251825591602001919060010190610530565b5b509050610559919061055d565b5090565b61057f91905b8082111561057b576000816000905550600101610563565b5090565b9056fea265627a7a723158206c7633c8de098be155f9d7e2360d114afbe1fd4ac08535f748269fd187f398f764736f6c63430005100032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80635ae5d4aa14610051578063a4136862146100d4578063ef690cc01461018f578063fe50cc7214610212575b600080fd5b610059610295565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61018d600480360360208110156100ea57600080fd5b810190808035906020019064010000000081111561010757600080fd5b82018360208201111561011957600080fd5b8035906020019184600183028401116401000000008311171561013b57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610337565b005b610197610351565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101d75780820151818401526020810190506101bc565b50505050905090810190601f1680156102045780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61021a6103ef565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561025a57808201518184015260208101905061023f565b50505050905090810190601f1680156102875780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561032d5780601f106103025761010080835404028352916020019161032d565b820191906000526020600020905b81548152906001019060200180831161031057829003601f168201915b5050505050905090565b806000908051906020019061034d9291906104dd565b5050565b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103e75780601f106103bc576101008083540402835291602001916103e7565b820191906000526020600020905b8154815290600101906020018083116103ca57829003601f168201915b505050505081565b60606040518060400160405280600b81526020017f48656c6c6f20576f726c640000000000000000000000000000000000000000008152506000908051906020019061043c9291906104dd565b5060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104d35780601f106104a8576101008083540402835291602001916104d3565b820191906000526020600020905b8154815290600101906020018083116104b657829003601f168201915b5050505050905090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061051e57805160ff191683800117855561054c565b8280016001018555821561054c579182015b8281111561054b578251825591602001919060010190610530565b5b509050610559919061055d565b5090565b61057f91905b8082111561057b576000816000905550600101610563565b5090565b9056fea265627a7a723158206c7633c8de098be155f9d7e2360d114afbe1fd4ac08535f748269fd187f398f764736f6c63430005100032",
-  "sourceMap": "49:437:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;49:437:1;;;;;;;",
-  "deployedSourceMap": "49:437:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;49:437:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;398:85;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;398:85:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;302:90;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;302:90:1;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;302:90:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;302:90:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;302:90:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;302:90:1;;;;;;;;;;;;;;;:::i;:::-;;147:22;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;147:22:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;176:120;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;176:120:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;398:85;436:13;468:8;461:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;398:85;:::o;302:90::-;376:9;365:8;:20;;;;;;;;;;;;:::i;:::-;;302:90;:::o;147:22::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;176:120::-;215:13;240:24;;;;;;;;;;;;;;;;;:8;:24;;;;;;;;;;;;:::i;:::-;;281:8;274:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;176:120;:::o;49:437::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.5.0;\n\n\n/* define contract */\n\ncontract helloWorld {\n\n    /* define variables, all variables are stored on the blockchain */\n    string public greeting;\n\n    function getGreeting () public returns(string memory) {\n        greeting = 'Hello World';\n        return greeting;\n    }\n\n    function setGreeting(string memory _greeting) public {\n        greeting = _greeting;\n    }\n\n    function Greet() view public returns (string memory) {\n        return greeting;\n    }\n\n}\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"Greet\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getGreeting\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"_greeting\",\"type\":\"string\"}],\"name\":\"setGreeting\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/yashmadhwal/Documents/Yash Madhwal/Ethereum/Hello_World_SC_Python/contracts/helloWorld.sol\":\"helloWorld\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/yashmadhwal/Documents/Yash Madhwal/Ethereum/Hello_World_SC_Python/contracts/helloWorld.sol\":{\"keccak256\":\"0x37550e997b6c0c19bf85956e95253e3788a6cf2b65751afd74289c6b533717d8\",\"urls\":[\"bzz-raw://eb5369e3f37f7596e61558d14bd0e591ce12c4accf267ad21bec6655ae3b2612\",\"dweb:/ipfs/QmWewiHi7UZsQbqno2pnCSxZiGJThrddfG1gNv8ZxFVUWK\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506103da806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80635ae5d4aa14610046578063a4136862146100c9578063fe50cc7214610184575b600080fd5b61004e610207565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561008e578082015181840152602081019050610073565b50505050905090810190601f1680156100bb5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b610182600480360360208110156100df57600080fd5b81019080803590602001906401000000008111156100fc57600080fd5b82018360208201111561010e57600080fd5b8035906020019184600183028401116401000000008311171561013057600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506102a9565b005b61018c6102c3565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101cc5780820151818401526020810190506101b1565b50505050905090810190601f1680156101f95780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561029f5780601f106102745761010080835404028352916020019161029f565b820191906000526020600020905b81548152906001019060200180831161028257829003601f168201915b5050505050905090565b80600090805190602001906102bf929190610300565b5050565b60606040518060400160405280600b81526020017f48656c6c6f20576f726c64000000000000000000000000000000000000000000815250905090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061034157805160ff191683800117855561036f565b8280016001018555821561036f579182015b8281111561036e578251825591602001919060010190610353565b5b50905061037c9190610380565b5090565b6103a291905b8082111561039e576000816000905550600101610386565b5090565b9056fea265627a7a723158203ff9ae1b52c627751aafc6858a30c70112e26222d50a2d183a2525282996869864736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80635ae5d4aa14610046578063a4136862146100c9578063fe50cc7214610184575b600080fd5b61004e610207565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561008e578082015181840152602081019050610073565b50505050905090810190601f1680156100bb5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b610182600480360360208110156100df57600080fd5b81019080803590602001906401000000008111156100fc57600080fd5b82018360208201111561010e57600080fd5b8035906020019184600183028401116401000000008311171561013057600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506102a9565b005b61018c6102c3565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101cc5780820151818401526020810190506101b1565b50505050905090810190601f1680156101f95780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561029f5780601f106102745761010080835404028352916020019161029f565b820191906000526020600020905b81548152906001019060200180831161028257829003601f168201915b5050505050905090565b80600090805190602001906102bf929190610300565b5050565b60606040518060400160405280600b81526020017f48656c6c6f20576f726c64000000000000000000000000000000000000000000815250905090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061034157805160ff191683800117855561036f565b8280016001018555821561036f579182015b8281111561036e578251825591602001919060010190610353565b5b50905061037c9190610380565b5090565b6103a291905b8082111561039e576000816000905550600101610386565b5090565b9056fea265627a7a723158203ff9ae1b52c627751aafc6858a30c70112e26222d50a2d183a2525282996869864736f6c63430005100032",
+  "sourceMap": "49:441:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;49:441:1;;;;;;;",
+  "deployedSourceMap": "49:441:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;49:441:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;402:85;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;402:85:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;306:90;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;306:90:1;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;306:90:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;306:90:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;306:90:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;306:90:1;;;;;;;;;;;;;;;:::i;:::-;;169:131;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;169:131:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;402:85;440:13;472:8;465:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;402:85;:::o;306:90::-;380:9;369:8;:20;;;;;;;;;;;;:::i;:::-;;306:90;:::o;169:131::-;212:13;273:20;;;;;;;;;;;;;;;;;;;169:131;:::o;49:441::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\n\n/* define contract */\n\ncontract helloWorld {\n\n    /* define variables, all variables are stored on the blockchain */\n    string greeting;\n\n    function getGreeting() pure public returns(string memory) {\n        //greeting = 'Hello World';\n        return 'Hello World';\n    }\n\n    function setGreeting(string memory _greeting) public {\n        greeting = _greeting;\n    }\n\n    function Greet() view public returns (string memory) {\n        return greeting;\n    }\n\n}\n",
   "sourcePath": "/Users/yashmadhwal/Documents/Yash Madhwal/Ethereum/Hello_World_SC_Python/contracts/helloWorld.sol",
   "ast": {
     "absolutePath": "/Users/yashmadhwal/Documents/Yash Madhwal/Ethereum/Hello_World_SC_Python/contracts/helloWorld.sol",
     "exportedSymbols": {
       "helloWorld": [
-        67
+        63
       ]
     },
-    "id": 68,
+    "id": 64,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -96,9 +81,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 67,
+        "id": 63,
         "linearizedBaseContracts": [
-          67
+          63
         ],
         "name": "helloWorld",
         "nodeType": "ContractDefinition",
@@ -108,8 +93,8 @@
             "id": 36,
             "name": "greeting",
             "nodeType": "VariableDeclaration",
-            "scope": 67,
-            "src": "147:22:1",
+            "scope": 63,
+            "src": "147:15:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -127,88 +112,42 @@
               }
             },
             "value": null,
-            "visibility": "public"
+            "visibility": "internal"
           },
           {
             "body": {
-              "id": 47,
+              "id": 43,
               "nodeType": "Block",
-              "src": "230:66:1",
+              "src": "227:73:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 43,
+                    "hexValue": "48656c6c6f20576f726c64",
+                    "id": 41,
                     "isConstant": false,
                     "isLValue": false,
-                    "isPure": false,
+                    "isPure": true,
+                    "kind": "string",
                     "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 41,
-                      "name": "greeting",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 36,
-                      "src": "240:8:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_string_storage",
-                        "typeString": "string storage ref"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "hexValue": "48656c6c6f20576f726c64",
-                      "id": 42,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "string",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "251:13:1",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_stringliteral_592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0061d243a2e6707ba",
-                        "typeString": "literal_string \"Hello World\""
-                      },
-                      "value": "Hello World"
-                    },
-                    "src": "240:24:1",
+                    "nodeType": "Literal",
+                    "src": "280:13:1",
+                    "subdenomination": null,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage",
-                      "typeString": "string storage ref"
-                    }
-                  },
-                  "id": 44,
-                  "nodeType": "ExpressionStatement",
-                  "src": "240:24:1"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 45,
-                    "name": "greeting",
-                    "nodeType": "Identifier",
-                    "overloadedDeclarations": [],
-                    "referencedDeclaration": 36,
-                    "src": "281:8:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage",
-                      "typeString": "string storage ref"
-                    }
+                      "typeIdentifier": "t_stringliteral_592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0061d243a2e6707ba",
+                      "typeString": "literal_string \"Hello World\""
+                    },
+                    "value": "Hello World"
                   },
                   "functionReturnParameters": 40,
-                  "id": 46,
+                  "id": 42,
                   "nodeType": "Return",
-                  "src": "274:15:1"
+                  "src": "273:20:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 48,
+            "id": 44,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -218,7 +157,7 @@
               "id": 37,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "197:2:1"
+              "src": "189:2:1"
             },
             "returnParameters": {
               "id": 40,
@@ -229,8 +168,8 @@
                   "id": 39,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 48,
-                  "src": "215:13:1",
+                  "scope": 44,
+                  "src": "212:13:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -241,7 +180,7 @@
                     "id": 38,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "215:6:1",
+                    "src": "212:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -251,36 +190,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "214:15:1"
+              "src": "211:15:1"
             },
-            "scope": 67,
-            "src": "176:120:1",
-            "stateMutability": "nonpayable",
+            "scope": 63,
+            "src": "169:131:1",
+            "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 57,
+              "id": 53,
               "nodeType": "Block",
-              "src": "355:37:1",
+              "src": "359:37:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 55,
+                    "id": 51,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 53,
+                      "id": 49,
                       "name": "greeting",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 36,
-                      "src": "365:8:1",
+                      "src": "369:8:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -290,47 +229,47 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 54,
+                      "id": 50,
                       "name": "_greeting",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 50,
-                      "src": "376:9:1",
+                      "referencedDeclaration": 46,
+                      "src": "380:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
                         "typeString": "string memory"
                       }
                     },
-                    "src": "365:20:1",
+                    "src": "369:20:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 56,
+                  "id": 52,
                   "nodeType": "ExpressionStatement",
-                  "src": "365:20:1"
+                  "src": "369:20:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 58,
+            "id": 54,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setGreeting",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 51,
+              "id": 47,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 50,
+                  "id": 46,
                   "name": "_greeting",
                   "nodeType": "VariableDeclaration",
-                  "scope": 58,
-                  "src": "323:23:1",
+                  "scope": 54,
+                  "src": "327:23:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -338,10 +277,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 49,
+                    "id": 45,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "323:6:1",
+                    "src": "327:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -351,71 +290,71 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "322:25:1"
+              "src": "326:25:1"
             },
             "returnParameters": {
-              "id": 52,
+              "id": 48,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "355:0:1"
+              "src": "359:0:1"
             },
-            "scope": 67,
-            "src": "302:90:1",
+            "scope": 63,
+            "src": "306:90:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 65,
+              "id": 61,
               "nodeType": "Block",
-              "src": "451:32:1",
+              "src": "455:32:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 63,
+                    "id": 59,
                     "name": "greeting",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 36,
-                    "src": "468:8:1",
+                    "src": "472:8:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "functionReturnParameters": 62,
-                  "id": 64,
+                  "functionReturnParameters": 58,
+                  "id": 60,
                   "nodeType": "Return",
-                  "src": "461:15:1"
+                  "src": "465:15:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 66,
+            "id": 62,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "Greet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 59,
+              "id": 55,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "412:2:1"
+              "src": "416:2:1"
             },
             "returnParameters": {
-              "id": 62,
+              "id": 58,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 61,
+                  "id": 57,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 66,
-                  "src": "436:13:1",
+                  "scope": 62,
+                  "src": "440:13:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -423,10 +362,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 60,
+                    "id": 56,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "436:6:1",
+                    "src": "440:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -436,29 +375,29 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "435:15:1"
+              "src": "439:15:1"
             },
-            "scope": 67,
-            "src": "398:85:1",
+            "scope": 63,
+            "src": "402:85:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 68,
-        "src": "49:437:1"
+        "scope": 64,
+        "src": "49:441:1"
       }
     ],
-    "src": "0:487:1"
+    "src": "0:491:1"
   },
   "legacyAST": {
     "absolutePath": "/Users/yashmadhwal/Documents/Yash Madhwal/Ethereum/Hello_World_SC_Python/contracts/helloWorld.sol",
     "exportedSymbols": {
       "helloWorld": [
-        67
+        63
       ]
     },
-    "id": 68,
+    "id": 64,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -478,9 +417,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 67,
+        "id": 63,
         "linearizedBaseContracts": [
-          67
+          63
         ],
         "name": "helloWorld",
         "nodeType": "ContractDefinition",
@@ -490,8 +429,8 @@
             "id": 36,
             "name": "greeting",
             "nodeType": "VariableDeclaration",
-            "scope": 67,
-            "src": "147:22:1",
+            "scope": 63,
+            "src": "147:15:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -509,88 +448,42 @@
               }
             },
             "value": null,
-            "visibility": "public"
+            "visibility": "internal"
           },
           {
             "body": {
-              "id": 47,
+              "id": 43,
               "nodeType": "Block",
-              "src": "230:66:1",
+              "src": "227:73:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 43,
+                    "hexValue": "48656c6c6f20576f726c64",
+                    "id": 41,
                     "isConstant": false,
                     "isLValue": false,
-                    "isPure": false,
+                    "isPure": true,
+                    "kind": "string",
                     "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 41,
-                      "name": "greeting",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 36,
-                      "src": "240:8:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_string_storage",
-                        "typeString": "string storage ref"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "hexValue": "48656c6c6f20576f726c64",
-                      "id": 42,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "string",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "251:13:1",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_stringliteral_592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0061d243a2e6707ba",
-                        "typeString": "literal_string \"Hello World\""
-                      },
-                      "value": "Hello World"
-                    },
-                    "src": "240:24:1",
+                    "nodeType": "Literal",
+                    "src": "280:13:1",
+                    "subdenomination": null,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage",
-                      "typeString": "string storage ref"
-                    }
-                  },
-                  "id": 44,
-                  "nodeType": "ExpressionStatement",
-                  "src": "240:24:1"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 45,
-                    "name": "greeting",
-                    "nodeType": "Identifier",
-                    "overloadedDeclarations": [],
-                    "referencedDeclaration": 36,
-                    "src": "281:8:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage",
-                      "typeString": "string storage ref"
-                    }
+                      "typeIdentifier": "t_stringliteral_592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0061d243a2e6707ba",
+                      "typeString": "literal_string \"Hello World\""
+                    },
+                    "value": "Hello World"
                   },
                   "functionReturnParameters": 40,
-                  "id": 46,
+                  "id": 42,
                   "nodeType": "Return",
-                  "src": "274:15:1"
+                  "src": "273:20:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 48,
+            "id": 44,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -600,7 +493,7 @@
               "id": 37,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "197:2:1"
+              "src": "189:2:1"
             },
             "returnParameters": {
               "id": 40,
@@ -611,8 +504,8 @@
                   "id": 39,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 48,
-                  "src": "215:13:1",
+                  "scope": 44,
+                  "src": "212:13:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -623,7 +516,7 @@
                     "id": 38,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "215:6:1",
+                    "src": "212:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -633,36 +526,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "214:15:1"
+              "src": "211:15:1"
             },
-            "scope": 67,
-            "src": "176:120:1",
-            "stateMutability": "nonpayable",
+            "scope": 63,
+            "src": "169:131:1",
+            "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 57,
+              "id": 53,
               "nodeType": "Block",
-              "src": "355:37:1",
+              "src": "359:37:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 55,
+                    "id": 51,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 53,
+                      "id": 49,
                       "name": "greeting",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 36,
-                      "src": "365:8:1",
+                      "src": "369:8:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -672,47 +565,47 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 54,
+                      "id": 50,
                       "name": "_greeting",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 50,
-                      "src": "376:9:1",
+                      "referencedDeclaration": 46,
+                      "src": "380:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
                         "typeString": "string memory"
                       }
                     },
-                    "src": "365:20:1",
+                    "src": "369:20:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 56,
+                  "id": 52,
                   "nodeType": "ExpressionStatement",
-                  "src": "365:20:1"
+                  "src": "369:20:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 58,
+            "id": 54,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setGreeting",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 51,
+              "id": 47,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 50,
+                  "id": 46,
                   "name": "_greeting",
                   "nodeType": "VariableDeclaration",
-                  "scope": 58,
-                  "src": "323:23:1",
+                  "scope": 54,
+                  "src": "327:23:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -720,10 +613,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 49,
+                    "id": 45,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "323:6:1",
+                    "src": "327:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -733,71 +626,71 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "322:25:1"
+              "src": "326:25:1"
             },
             "returnParameters": {
-              "id": 52,
+              "id": 48,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "355:0:1"
+              "src": "359:0:1"
             },
-            "scope": 67,
-            "src": "302:90:1",
+            "scope": 63,
+            "src": "306:90:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 65,
+              "id": 61,
               "nodeType": "Block",
-              "src": "451:32:1",
+              "src": "455:32:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 63,
+                    "id": 59,
                     "name": "greeting",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 36,
-                    "src": "468:8:1",
+                    "src": "472:8:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "functionReturnParameters": 62,
-                  "id": 64,
+                  "functionReturnParameters": 58,
+                  "id": 60,
                   "nodeType": "Return",
-                  "src": "461:15:1"
+                  "src": "465:15:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 66,
+            "id": 62,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "Greet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 59,
+              "id": 55,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "412:2:1"
+              "src": "416:2:1"
             },
             "returnParameters": {
-              "id": 62,
+              "id": 58,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 61,
+                  "id": 57,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 66,
-                  "src": "436:13:1",
+                  "scope": 62,
+                  "src": "440:13:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -805,10 +698,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 60,
+                    "id": 56,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "436:6:1",
+                    "src": "440:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -818,20 +711,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "435:15:1"
+              "src": "439:15:1"
             },
-            "scope": 67,
-            "src": "398:85:1",
+            "scope": 63,
+            "src": "402:85:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 68,
-        "src": "49:437:1"
+        "scope": 64,
+        "src": "49:441:1"
       }
     ],
-    "src": "0:487:1"
+    "src": "0:491:1"
   },
   "compiler": {
     "name": "solc",
@@ -841,12 +734,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x1c509bbc3320EFcE2889C6C8493FB8C85bbAb4bb",
-      "transactionHash": "0x1854a6783d7e7f288da145696fe74811eed6c4984db03f557994e1a3e87531b8"
+      "address": "0x136b75d38cd498E563286791cE9092520fC2ab24",
+      "transactionHash": "0x07405c1946c34aa022c77058b2dee493ab8805fa89315bbee7c2cea0ae6c84b5"
     }
   },
   "schemaVersion": "3.2.4",
-  "updatedAt": "2020-09-21T17:32:47.449Z",
+  "updatedAt": "2020-12-29T20:48:07.682Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
